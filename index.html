@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VOGUE — Today’s Stories</title>
+
+  <!-- 비슷한 무드의 서체(로고용 Didone 계열 대체 + 본문 산세리프) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800;900&family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="brand" href="#" aria-label="VOGUE Home">VOGUE</a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link is-active" href="#fashion">FASHION</a></li>
+          <li><a class="nav__link" href="#beauty">BEAUTY</a></li>
+          <li><a class="nav__link" href="#living">LIVING</a></li>
+          <li><a class="nav__link" href="#culture">CULTURE</a></li>
+          <li><a class="nav__link" href="#video">VIDEO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Spacer to match 상단 여백 -->
+  <div class="hero-space" aria-hidden="true"></div>
+
+  <!-- Today’s Stories -->
+  <main id="main">
+    <section class="section container">
+      <h2 class="section__title">TODAY’S STORIES</h2>
+
+      <!-- 첫 행: 좌 대형 1 + 우 2 (시안 구성) -->
+      <div class="stories-grid stories-grid--lead">
+        <!-- Lead Large Left -->
+        <article class="card card--lead">
+          <a class="card__media" href="#">
+            <img src="image/1.png" alt="Lead story image" />
+          </a>
+          <div class="card__meta">
+            <span class="card__category">커버 스토리</span>
+            <time class="card__time" datetime="2025-09-01">2025.09.01</time>
+          </div>
+          <h3 class="card__title">
+            속도를 담은 디자인, 선 위의 예술
+          </h3>
+        </article>
+
+        <!-- Right column – item 1 -->
+        <article class="card">
+          <a class="card__media" href="#">
+            <img src="image/2.png" alt="Concert stills" />
+          </a>
+          <div class="card__meta">
+            <span class="card__category">아트</span>
+            <time class="card__time" datetime="2025-09-03">2025.09.03</time>
+            <span class="card__by">by 이형민</span>
+          </div>
+          <h3 class="card__title">조용한 오후, 공간에 스며든 빛</h3>
+        </article>
+
+        <!-- Right column – item 2 -->
+        <article class="card">
+          <a class="card__media" href="#">
+            <img src="image/3.png" alt="Portrait of Rachel Scott" />
+          </a>
+          <div class="card__meta">
+            <span class="card__category">패션 뉴스</span>
+            <time class="card__time" datetime="2025-09-03">2025.09.03</time>
+            <span class="card__by">by 오키봄</span>
+          </div>
+          <h3 class="card__title">한 잔의 온기, 마음을 달래는 시간</h3>
+        </article>
+      </div>
+
+      <!-- 두 번째 행: 3칸 타일 -->
+      <div class="stories-grid">
+        <article class="card card--tile">
+          <a class="card__media" href="#">
+            <img src="image/4.jpg" alt="Red flower editorial" />
+          </a>
+          <div class="card__meta">
+            <span class="card__category">포토</span>
+            <time class="card__time" datetime="2025-09-03">2025.09.03</time>
+          </div>
+          <h3 class="card__title">푸른 바다의 계절</h3>
+        </article>
+
+        <article class="card card--tile">
+          <a class="card__media" href="#">
+            <img src="image/5.jpg" alt="Headphone beauty cut" />
+          </a>
+          <div class="card__meta">
+            <span class="card__category">뷰티</span>
+            <time class="card__time" datetime="2025-09-03">2025.09.03</time>
+          </div>
+          <h3 class="card__title">저녁의 빛, 바다와 하늘의 대화</h3>
+        </article>
+
+        <article class="card card--tile">
+          <a class="card__media" href="#">
+            <img src="image/6.jpg" alt="Perfume in roses" />
+          </a>
+          <div class="card__meta">
+            <span class="card__category">아이템</span>
+            <time class="card__time" datetime="2025-09-03">2025.09.03</time>
+          </div>
+          <h3 class="card__title">고요한 웅장함, 하얀 왕국</h3>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 VOGUE Korea (Demo). For design reference only.</small>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
